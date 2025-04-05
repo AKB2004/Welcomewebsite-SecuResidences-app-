@@ -1,18 +1,29 @@
-import React from 'react'
-import Navbar from './components/navbar'
-// import logo from './assets/img/image.png'
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Navbar from "./components/Navbar";
+import Home from "./components/Home";
+import Contact from "./components/Contact";
+import Survey from "./components/Survey";
+import Footer from "./components/Footer";
+// import About from "./components/About";
+// import ScrollToSection from './components/ScrollToSection';
 
 
 function App() {
   return (
-
-<>
-<Navbar/>
-</>
-  )
+    <Router>
+      <Navbar />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/contact" element={<Contact />} />
+        <Route path="/survey" element={<Survey />} />
+      </Routes>
+      <Footer/>
+    </Router>
+  );
 }
 
-export default App
+export default App;
+
 
 
 //     <nav className='flex justify-between items-center px-8 py-4'>
