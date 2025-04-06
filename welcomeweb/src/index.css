@@ -5,6 +5,11 @@ html {
     scroll-behavior: smooth;
   }
   
+  /* src/index.css */
+body {
+  font-family: 'Nunito', sans-serif;
+}
+
 
   .nav-underline {
     position: relative;

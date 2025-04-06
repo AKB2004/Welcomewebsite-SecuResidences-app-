@@ -6,13 +6,13 @@ import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
-    <footer className="bg-gray-100 dark:bg-gray-900 text-gray-700 dark:text-gray-300 px-4 py-8">
-      <div className="max-w-7xl mx-auto text-center">
+    <footer className="px-4 py-8 text-gray-700 bg-gray-200 dark:bg-gray-900 dark:text-gray-300">
+      <div className="mx-auto text-center max-w-7xl">
     
-        <h2 className="text-2xl font-bold mb-4 text-purple-700 dark:text-indigo-400">SecuResidences</h2>
+        <h2 className="mb-4 text-2xl font-bold text-purple-700 dark:text-indigo-400">SecuResidences</h2>
 
         {/* Navigation Links */}
-        <div className="flex justify-center space-x-6 mb-4 flex-wrap">
+        <div className="flex flex-wrap justify-center mb-4 space-x-6">
         <a href="#home" className="hover:text-purple-700">Home</a>
         <a href="#about" className="hover:text-purple-700">About</a>
         <Link to="/contact" className="hover:text-purple-700">Contact</Link>
