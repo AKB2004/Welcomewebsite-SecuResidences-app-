@@ -39,13 +39,17 @@ const Home = () => {
   {/* Right Content - Bigger Phone Frame */}
   <div className="flex justify-center mt-10 md:w-1/2 md:mt-0">
     <div className="w-[330px] h-[650px] rounded-[2.5rem] border-[6px] border-gray-400 shadow-2xl overflow-hidden bg-black">
-      <video
-        src={appVideo} // Replace with your actual path
-        autoPlay
-        loop
-        muted
-        className="object-cover w-full h-full"
-      ></video>
+    <video
+  src={appVideo} // Make sure this is correctly imported
+  autoPlay
+  loop
+  muted={false}
+  playsInline
+  key={appVideo} // Ensures reloading starts it from the beginning
+  className="object-cover w-full h-full"
+  controls // optional if you want user control
+></video>
+
     </div>
   </div>
 </section>
