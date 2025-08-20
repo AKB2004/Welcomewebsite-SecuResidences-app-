@@ -34,11 +34,11 @@
 
 import React from 'react'
 import logo from '../assets/img/image.png'
-import { Link, useLocation } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 
-function Navbar() {
-  const location = useLocation();
+function navbar() {
+  // const location = useLocation();
 
   const scrollToSection = (id) => {
     const section = document.getElementById(id);
@@ -88,4 +88,4 @@ function Navbar() {
   );
 }
 
-export default Navbar;
+export default navbar;
