@@ -73,9 +73,9 @@ function Navbar() {
     </Link>
   </li>
   <li>
-    <Link to="/survey" className="text-xl text-purple-700 transition nav-underline">
+    {/* <Link to="/survey" className="text-xl text-purple-700 transition nav-underline">
       Survey
-    </Link>
+    </Link> */}
   </li>
 </ul>
 

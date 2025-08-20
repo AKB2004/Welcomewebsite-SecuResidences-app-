@@ -1,8 +1,8 @@
 import React from 'react';
-import Footer from './Footer';
-import appVideo from '../assets/img/video.mp4'
-import aboutImg from '../assets/img/aboutimg.png'
 import { useNavigate } from 'react-router-dom';
+import aboutImg from '../assets/img/aboutimg.png';
+import appVideo from '../assets/img/video.mp4';
+import Footer from './Footer';
 
 
 const Home = () => {
@@ -23,8 +23,11 @@ const Home = () => {
     <h1 className="mb-4 text-5xl font-bold text-purple-800 ">
       Welcome to SecuResidences
     </h1>
-    <p className="max-w-md mb-6 text-2xl text-gray-800">
-    “Tired of messy hostels and missed cleanups? We make your stay smarter and more secure.”
+    <p className="max-w-md mb-6 text-xl text-gray-800">
+    Tired of messy hostels and missed cleanups?
+    </p>
+    <p className="max-w-md mb-6 -mt-4 text-2xl text-gray-800">
+    "We make your stay smart, automated and secure.”
     </p>
     <div className="space-x-4">
       <button className="px-4 py-2 text-base text-white transition bg-purple-700 hover:bg-purple-600 rounded-xl" onClick={()=> alert("🚀 APK release is on the way!")}>
@@ -98,7 +101,7 @@ const Home = () => {
 
       {/* Social Proof */}
       <p className="mt-8 text-lg font-medium text-purple-900">
-        🎉 Trusted by <span className="font-bold">500+ students</span> and growing!
+        🎉 Trusted by <span className="font-bold"> students, managers</span> and growing!
       </p>
     </div>
   </div>
